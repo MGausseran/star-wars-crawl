@@ -3,7 +3,9 @@ body {
     text-align: center;
     overflow: hidden
 }
-
+audio {
+    text-align: right;
+}
 .wrapper {
     display: flex;
     height: 100%;
