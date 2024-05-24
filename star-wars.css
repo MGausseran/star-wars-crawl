@@ -1,12 +1,33 @@
 body {
     background-image: url(https://static.vecteezy.com/ti/photos-gratuite/p2/1230968-ciel-etoile-gratuit-photo.jpeg);
     text-align: center;
+    overflow: hidden
 }
 
-header {
-    color: cornflowerblue;
+.wrapper {
+    display: flex;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    perspective: 600px;
 }
 
-main {
-    color: #f2d518;
+.scroll-text {
+    color: #ffc909;
+    font-size: 3vw;
+    position: relative;
+    animation: scroll 60s linear forwards;
+    
+
+}
+
+@keyframes scroll {
+
+    from {
+        top: 0; transform: rotateX(5deg) translateZ(20deg);
+    }
+
+    to {
+        top: -7500px; transform: translateZ(deg) rotateX(deg);
+    }
 }
