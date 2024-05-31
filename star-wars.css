@@ -1,12 +1,40 @@
 body {
-    background-image: url(https://static.vecteezy.com/ti/photos-gratuite/p2/1230968-ciel-etoile-gratuit-photo.jpeg);
-    text-align: center;
+    background-image: url(wallpaper.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden
 }
-audio {
-    text-align: right;
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    color: #feda4a;
+    font-size: 500%;
+    font-weight: 600;
+    letter-spacing: 6px;
+    line-height: 150%;
+    perspective: 100px;
+    text-align: justify;
 }
-.wrapper {
+h1 {
+    color: dodgerblue;
+    text-align: center;
+    margin-bottom: 150px;
+}
+p {
+    font-family: 'Pathway Gothic One';
+}
+
+audio {
+    position: fixed;
+    top: 0;
+}
+
+.scroll {
     display: flex;
     height: 100%;
     width: 60%;
@@ -16,20 +44,15 @@ audio {
 
 .scroll-text {
     color: #ffc909;
-    font-size: 3vw;
-    position: relative;
-    animation: scroll 60s linear forwards;
-    
+    animation: scroll 80s linear forwards;
+
 
 }
 
 @keyframes scroll {
-
-    from {
-        top: 0; transform: rotateX(5deg) translateZ(20deg);
+    0% {
+        transform: rotateX(20deg) translateY(100%);
     }
 
-    to {
-        top: -7500px; transform: translateZ(deg) rotateX(deg);
-    }
-}
+    100% {
+        transform: rotateX(25deg) translateY(-100%);
